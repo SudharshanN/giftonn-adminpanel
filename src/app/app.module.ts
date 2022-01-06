@@ -67,6 +67,11 @@ import { FilterComponent } from "./filter/filter.component";
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { VendorTaxesComponent } from './vendor-taxes/vendor-taxes.component';
 import { VendorActionsComponent } from './vendor-actions/vendor-actions.component';
+import { ContactComponent } from './customers-support/contact/contact.component';
+import { ReceivedMessageComponent } from './customers-support/received-message/received-message.component';
+import { SentMessageComponent } from './customers-support/sent-message/sent-message.component';
+import { ContactService } from "./customers-support/contact/contact.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -126,6 +131,9 @@ import { VendorActionsComponent } from './vendor-actions/vendor-actions.componen
     EditUserComponent,
     VendorTaxesComponent,
     VendorActionsComponent,
+    ContactComponent, SentMessageComponent,
+    ReceivedMessageComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -138,9 +146,11 @@ import { VendorActionsComponent } from './vendor-actions/vendor-actions.componen
     AngularEditorModule,
     HttpClientModule,
     MaterialModule,
+
+
   ],
   exports: [AngularEditorModule],
-  providers: [ThemeService],
+  providers: [ThemeService, ContactService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
