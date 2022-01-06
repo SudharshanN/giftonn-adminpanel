@@ -26,6 +26,14 @@
                            class="search-input">
                 </mat-form-field>
             </form>
+            <button mat-stroked-button
+                    color="primary"
+                    style="font-size: 18px"
+                    class="filter-btn"
+                    (click)="openFilter()">
+                Filter
+                <mat-icon>filter_list</mat-icon>
+            </button>
         </div>
     </div>
     <mat-tab-group>
@@ -212,20 +220,31 @@
                 <table class="table table-striped table-hover tab_admin prod_tab">
                     <thead>
                         <tr style="padding-top: 20px;">
-                            <th class="th_wid">QR Number</th>
-                            <th class="th_wid">Order Id</th>
-                            <th class="th_wid">Store Id</th>
-                            <th class="th_wid">Customer</th>
-                            <th class="th_wid">Purchaser Name</th>
-                            <th class="th_wid">Date & Time</th>
-                            <th class="th_wid">Product Id</th>
-                            <th class="th_wid">Product Name</th>
-                            <th class="th_wid">Total Price</th>
-                            <th class="th_wid">Discount</th>
-                            <th class="th_wid">Net Price</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">QR Number</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Order Id</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Store Id</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Customer</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Purchaser Name</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Date & Time</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Product Id</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Product Name</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Total Price</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Discount</th>
+                            <th class="th_wid"
+                                style="color: black; font-weight: bold;">Net Price</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="vender_data">
                         <tr>
                             <td>256897</td>
                             <td>256897</td>
