@@ -11,6 +11,9 @@ export class FilterComponent implements OnInit {
   userForm: FormGroup;
   vendorForm: FormGroup;
   productForm: FormGroup;
+  paymentForm: FormGroup;
+  purchestForm: FormGroup;
+
   constructor(
     public dialogRef: MatDialogRef<FilterComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -28,7 +31,27 @@ export class FilterComponent implements OnInit {
       storeId: [""],
       status: [""],
     });
+    this.paymentForm = this.fb.group({
+      productId: [""],
+      storeId: [""],
+      category: [""],
+      subCategory: [""],
+      gender: [""],
+      taxes: [""],
+      status: [""],
+    });
+
     this.productForm = this.fb.group({
+      productId: [""],
+      storeId: [""],
+      category: [""],
+      subCategory: [""],
+      gender: [""],
+      taxes: [""],
+      status: [""],
+    });
+
+    this.purchestForm = this.fb.group({
       productId: [""],
       storeId: [""],
       category: [""],
@@ -48,6 +71,13 @@ export class FilterComponent implements OnInit {
   get pf() {
     return this.productForm.controls;
   }
+  get mf() {
+    return this.paymentForm.controls;
+  }
+
+  get gf() {
+    return this.purchestForm.controls
+  }
 
   submit() {
     console.log(this.userForm.value);
@@ -61,10 +91,12 @@ export class FilterComponent implements OnInit {
     });
     this.vendorForm.reset();
     this.productForm.reset();
+    this.paymentForm.reset();
+    this.purchestForm.reset();
   }
   close() {
     this.dialogRef.close();
     this.reset();
   }
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

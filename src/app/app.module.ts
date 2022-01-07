@@ -148,6 +148,7 @@ import { ContactService } from "./customers-support/contact/contact.service";
     MaterialModule,
 
 
+
   ],
   exports: [AngularEditorModule],
   providers: [ThemeService, ContactService],

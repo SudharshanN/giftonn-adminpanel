@@ -46,13 +46,17 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 129.84%;
+  line-height: 125.84%;
   text-transform: capitalize;
-  color: #b2b2b3;;
+  color: #9d9d9e;
+  margin-bottom: 20px;
+}
+.number{
+   line-height: 90.84%;
 }
 
 .card-design{
-  width: 266px;
+  width: 290px;
   display: flex;
   padding: 1rem .5rem;
   height: 104px;
@@ -69,8 +73,19 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 7px 0px;
 }
 // .mat-typography{background: url(../../../../assets/Rectangle.png) !important;}
-.sale_graph{width: 981px;padding-left: 37px;}
-.dash_board h2{font-size: 21px;font-weight: 600;color: #ae985f;padding-left: 35px;}
+.sale_graph{width: 990px;padding-left: 37px;}
+.dash_board h1{font-size: 25px;font-weight: 700;color: #ae985f;padding-left: 35px;}
+.dash_head h2 {
+  font-weight: 650;
+  padding-left: 35px;
+  font-size: 14px;
+}
+
+.sale_graph h2 {
+   font-weight: 650;
+
+  font-size: 15px;
+}
 .money-currency {
   font-style: normal;
   font-weight: 500;
@@ -131,3 +146,4 @@
   .cancel{
     background-color: #e5a0a0 !important;
   }
+
