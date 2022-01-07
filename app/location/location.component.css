@@ -1,0 +1,36 @@
+.search-icon-form{
+    font-size: 2rem;
+}
+.icon-location-box{
+    padding: 1.5rem;
+    background: #FFF6F6;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.icon-location-box h4{
+  
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+.icon-location-box:hover h4{
+color:var(--main);
+}
+.icon-location-box img{
+height: 80px;
+margin-bottom: 0.5rem;
+}
+.popular{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.loc-close{
+    float: right;
+    font-size: 2rem;
+    color: #000;
+}

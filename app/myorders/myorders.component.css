@@ -1,0 +1,149 @@
+.order-box{
+    padding: 1rem;
+    background: #FAFAFA;
+    border: 1px solid #eee;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+}
+.side-count-div{
+    padding-left: 1rem;   
+}
+.side-count-div h5{
+    color: #B76E79;
+    font-weight:700;
+margin-bottom: 0.25rem;
+font-size: 1rem;
+}
+#progress{
+    padding-inline-start: 0px;
+}
+.center-image{
+    margin: 0 auto;
+    display: block;
+}
+.spending{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.side-count-div span{
+  font-size: 0.75rem;
+
+}
+.spending span{
+
+    display: inline-block;
+    color: #505565;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+.inside-order-box h4{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #171E30;
+}
+.inside-order-box h6{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #171E30;
+
+}
+.inside-order-box span{
+    font-size: 0.65rem;
+    color: #505565;
+    display: inline-block;
+}
+.inside-order-box {
+ padding-bottom: 1rem;
+}
+.order-box-list {
+    margin-bottom: 1rem;
+    border-bottom:1px solid #B3B4B9;
+}
+.w-10{
+    width: 10%;
+    padding: 0;
+}
+.w-90{
+    width: 90%;
+}
+.order-status small{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: green;
+}
+.close-order{
+    font-size: 1.5rem;
+}
+.filterdrop{
+    color: #505565;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.track-p{
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+}
+.cancel{
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.node {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display:inline-block;
+    transition: all 1000ms ease;
+}
+
+.blue { background-color: rgba(82, 165, 255, 1); }
+.green{ background: #27AE60;
+
+}
+.red { background-color: rgba(255, 148, 148, 1); }
+.grey { background-color: rgba(201, 201, 201, 1); }
+.activated {
+    box-shadow: 0px 0px 3px 2px rgba(194, 255, 194, 0.8);
+}
+
+.divider {
+    height: 70px;
+    width: 2px;
+    margin-left: 4px;
+    transition: all 800ms ease;
+}
+
+#progress li p {
+    display:inline-block;
+    margin-left: 25px;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+}
+.green-c{
+    color: #27AE60;
+}
+
+#progress li {
+    list-style: none;
+    line-height: 1px;
+}
+
+
+@media (min-width: 768px) and (orientation:portrait) {
+  
+  
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+.order-box{
+    margin-bottom: 0.75rem;
+}
+}
+@media only screen and (max-width: 320px) {
+
+}

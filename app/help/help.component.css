@@ -1,0 +1,33 @@
+mat-expansion-panel-header .mat-expansion-indicator::after 
+{
+    content: "+";
+    border: 0;
+    transform: none;
+  }
+  .system-support-content
+  {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #505565;
+    letter-spacing: -0.1875px;
+  }
+  .mat-expansion-panel-header.mat-expanded .mat-expansion-indicator::after {
+    content: "-";
+  }
+  .help-row{
+    min-height: 200px;
+  }
+  #form-row
+  {
+    margin-top:40px;
+  }
+  .number-mb{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .talk{
+    font-size: 0.75rem;
+    text-align: center;
+  }

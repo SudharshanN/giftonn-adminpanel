@@ -1,0 +1,57 @@
+.first,.third{
+    width:7%;
+    }
+    .second{
+        width:86%;
+    }
+    .spending{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    .occasion-reminder.second{
+        width:50%; 
+    }
+    .close-order{
+        font-size: 1.5rem;
+    }
+    .occasion-reminder.third{
+        width:36%; 
+    }
+    .spending a{
+        color: #8A6E4B;
+        font-size: 0.8rem;
+        margin-right: 0.75rem;
+    }
+    .first img{
+        vertical-align: text-top;
+        height: 25px;
+    }
+    .notification-box h5{
+        font-size: 0.9rem;
+        color: #171E30;
+    font-weight: 600;
+    }
+    .spending span{
+
+        display: inline-block;
+        color: #505565;
+        font-size: 0.9rem;
+        vertical-align: middle;
+    }
+    .occasion-date{
+        display: inline-block;
+        font-size: 0.825rem;
+        font-weight: 500;
+        padding-left: 0.5rem;
+        position: relative;
+        top: 3px;
+    }
+    .notification-box  p{
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    }
+    .notification-close{
+        font-size: 1.25rem;
+        color: #171E30;
+    }

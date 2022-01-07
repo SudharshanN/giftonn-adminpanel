@@ -1,0 +1,10 @@
+.mat-form-field-autofill-control{
+color: #000  !important;
+}
+::ng-deep .mat-form-field-required-marker
+{
+ color: red;
+}
+::ng-deep .mat-input-placeholder { 
+    color: red; /* Any color */
+ }
