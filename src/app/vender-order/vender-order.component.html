@@ -4,6 +4,16 @@
             <h6>Vendore Orders</h6>
         </div>
         <div class="col-lg-6 add_btn">
+            <div class="filter_btn col-lg-10 col-md-10 col-sm-10 d-flex justify-content-end">
+                <button mat-stroked-button
+                        color="primary"
+                        style="font-size: 18px"
+                        class="filter-btn"
+                        (click)="openFilter()">
+                    Filter
+                    <mat-icon>filter_list</mat-icon>
+                </button>
+            </div>
         </div>
     </div>
 </section>
@@ -24,19 +34,13 @@
                            type="search"
                            placeholder="search"
                            class="search-input">
+
                 </mat-form-field>
             </form>
-            <button mat-stroked-button
-                    color="primary"
-                    style="font-size: 18px"
-                    class="filter-btn"
-                    (click)="openFilter()">
-                Filter
-                <mat-icon>filter_list</mat-icon>
-            </button>
         </div>
+
     </div>
-    <mat-tab-group>
+    <!-- <mat-tab-group>
         <mat-tab class="text-right tab_view mention"
                  label="QR Code Transaction"
                  style="padding-left: 221px;">
@@ -202,7 +206,7 @@
                 </table>
             </section>
         </mat-tab>
-    </mat-tab-group>
+    </mat-tab-group> -->
 
     <ul ngbNav
         #nav="ngbNav"
