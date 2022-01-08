@@ -68,6 +68,14 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 import { VendorTaxesComponent } from './vendor-taxes/vendor-taxes.component';
 import { VendorActionsComponent } from './vendor-actions/vendor-actions.component';
 import { ViewPartnerComponent } from './view-partner/view-partner.component';
+import { ContactComponent } from './customers-support/contact/contact.component';
+import { ReceivedMessageComponent } from './customers-support/received-message/received-message.component';
+import { SentMessageComponent } from './customers-support/sent-message/sent-message.component';
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -128,6 +136,9 @@ import { ViewPartnerComponent } from './view-partner/view-partner.component';
     VendorTaxesComponent,
     VendorActionsComponent,
     ViewPartnerComponent,
+    ContactComponent,
+    ReceivedMessageComponent,
+    SentMessageComponent,
   ],
   imports: [
     BrowserModule,
@@ -145,4 +156,4 @@ import { ViewPartnerComponent } from './view-partner/view-partner.component';
   providers: [ThemeService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from "@angular/core";
-import { FormGroup, Validators, FormBuilder } from "@angular/forms";
+import { FormGroup, Validators, FormBuilder, FormControl } from "@angular/forms";
 import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
 
 @Component({
@@ -13,6 +13,9 @@ export class FilterComponent implements OnInit {
   productForm: FormGroup;
   customerForm: FormGroup;
   partnerForm: FormGroup;
+  vendorordeForm: FormGroup;
+
+
   constructor(
     public dialogRef: MatDialogRef<FilterComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -56,6 +59,10 @@ export class FilterComponent implements OnInit {
       location: [""],
       status: [""],
     });
+
+    this.vendorordeForm = this.fb.group({
+
+    });
   }
 
   get uf() {
@@ -66,6 +73,9 @@ export class FilterComponent implements OnInit {
   }
   get pf() {
     return this.productForm.controls;
+  }
+  get of() {
+    return this.vendorordeForm.controls;
   }
 
   submit() {
@@ -82,10 +92,14 @@ export class FilterComponent implements OnInit {
     this.productForm.reset();
     this.customerForm.reset();
     this.partnerForm.reset();
+    this.vendorordeForm.reset();
   }
   close() {
     this.dialogRef.close();
     this.reset();
   }
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+
+
 }
+
