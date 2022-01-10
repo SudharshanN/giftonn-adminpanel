@@ -5,7 +5,6 @@ import { CustomerComponent } from "./customer/customer.component";
 import { SuccessfulModelComponent } from "./successful-model/successful-model.component";
 import { DeleteModelComponent } from "./delete-model/delete-model.component";
 import { AnalyticsComponent } from "./analytics/analytics.component";
-import { LoyailtyComponent } from "./loyailty/loyailty.component";
 import { PaymentsComponent } from "./payments/payments.component";
 import { OffersComponent } from "./offers/offers.component";
 import { PurchasersOrderComponent } from "./purchasers-order/purchasers-order.component";
@@ -13,7 +12,6 @@ import { CustomersSupportComponent } from "./customers-support/customers-support
 import { FreezedModelComponent } from "./freezed-model/freezed-model.component";
 import { RatingForCustomerComponent } from "./rating-for-customer/rating-for-customer.component";
 import { AddOffersComponent } from "./add-offers/add-offers.component";
-import { AddLoyaltyComponent } from "./add-loyalty/add-loyalty.component";
 import { VenderOrderComponent } from "./vender-order/vender-order.component";
 import { DenyProductComponent } from "./deny-product/deny-product.component";
 import { RewardCategoriesComponent } from "./reward-categories/reward-categories.component";

@@ -16,6 +16,8 @@ export class FilterComponent implements OnInit {
   promotionForm: FormGroup;
   productLaunchForm: FormGroup;
   loyaltyForm: FormGroup;
+  vendorPaymentForm: FormGroup;
+  partnerPaymentForm: FormGroup;
   constructor(
     public dialogRef: MatDialogRef<FilterComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -85,6 +87,22 @@ export class FilterComponent implements OnInit {
       currency: [""],
       endDate: [""],
     });
+    this.vendorPaymentForm = this.fb.group({
+      storeId: [""],
+      vendor: [""],
+      date: [""],
+    });
+    this.partnerPaymentForm = this.fb.group({
+      partnerId: [""],
+      vendor: [""],
+      date: [""],
+    });
+  }
+  get vpf() {
+    return this.vendorPaymentForm.controls;
+  }
+  get ppf() {
+    return this.partnerPaymentForm.controls;
   }
   get plf() {
     return this.loyaltyForm.controls;
@@ -125,6 +143,8 @@ export class FilterComponent implements OnInit {
     this.promotionForm.reset();
     this.productLaunchForm.reset();
     this.loyaltyForm.reset();
+    this.vendorPaymentForm.reset();
+    this.partnerPaymentForm.reset();
   }
   close() {
     this.dialogRef.close();

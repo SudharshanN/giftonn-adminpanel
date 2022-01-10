@@ -73,7 +73,7 @@ export class MarketingComponent implements OnInit {
   constructor(private router: Router, public dialog: MatDialog) {}
 
   ngOnInit(): void {}
-  myTabSelectedTabChange(event) {
+  tabChange(event) {
     console.log(event);
     if (event.index === 1) {
       this.productLaunchSelected = !this.productLaunchSelected;

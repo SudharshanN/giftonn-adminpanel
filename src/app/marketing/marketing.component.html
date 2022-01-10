@@ -78,11 +78,7 @@
       </mat-form-field>
     </div>
   </div>
-  <mat-tab-group
-    (selectedTabChange)="myTabSelectedTabChange($event)"
-    mat-align-tabs="space-between"
-    [defaultColor]="red"
-  >
+  <mat-tab-group (selectedTabChange)="tabChange($event)">
     <mat-tab
       class="text-right tab_view"
       label="Promotion"
