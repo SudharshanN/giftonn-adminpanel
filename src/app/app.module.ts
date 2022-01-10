@@ -54,7 +54,6 @@ import { MaterialModule } from "./material/material.module";
 import { FilterComponent } from "./filter/filter.component";
 import { VendorActionsComponent } from "./vendor-actions/vendor-actions.component";
 import { ViewPartnerComponent } from "./view-partner/view-partner.component";
-import { ViewPromotionDetailsComponent } from "./view-promotion-details/view-promotion-details.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -101,7 +100,6 @@ import { ViewPromotionDetailsComponent } from "./view-promotion-details/view-pro
     FilterComponent,
     VendorActionsComponent,
     ViewPartnerComponent,
-    ViewPromotionDetailsComponent,
   ],
   imports: [
     BrowserModule,

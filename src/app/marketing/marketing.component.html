@@ -107,7 +107,7 @@
               <td>
                 <a
                   href="javascript:void(0);"
-                  (click)="viewPromotion(promotion)"
+                  (click)="viewPromotionDetails(promotion)"
                   style="color: #9e8656"
                   >{{ promotion.promoId }}</a
                 >
@@ -185,7 +185,7 @@
               <th>Description</th>
               <th>Country</th>
               <th>Location</th>
-              <th>Launch Date</th>
+              <th>Start Date</th>
               <th>Status</th>
               <th>Action</th>
             </tr>
@@ -193,7 +193,14 @@
           <tbody>
             <tr *ngFor="let product of products">
               <td><img [src]="product.productImage" /></td>
-              <td>{{ product.productId }}</td>
+              <td>
+                <a
+                  href="javascript:void(0);"
+                  (click)="viewProductLaunchDetails(product)"
+                  style="color: #9e8656"
+                  >{{ product.productId }}</a
+                >
+              </td>
               <td>{{ product.vendorId }}</td>
               <td>{{ product.partnerId }}</td>
               <td>{{ product.category }}</td>
@@ -201,7 +208,7 @@
               <td>{{ product.description }}</td>
               <td>{{ product.country }}</td>
               <td>{{ product.location }}</td>
-              <td>{{ product.launchDate }}</td>
+              <td>{{ product.startDate }}</td>
               <td>
                 <div
                   class="font-weight-bold"
