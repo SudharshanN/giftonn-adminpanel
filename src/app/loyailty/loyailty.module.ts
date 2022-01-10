@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { AddLoyaltyComponent } from "../add-loyalty/add-loyalty.component";
+import { AddLoyaltyComponent } from "./add-loyalty/add-loyalty.component";
 import { LoyailtyComponent } from "./loyailty.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { Routes, RouterModule } from "@angular/router";
