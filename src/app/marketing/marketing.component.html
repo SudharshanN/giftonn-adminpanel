@@ -227,20 +227,23 @@
                   <mat-icon>arrow_drop_down</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu">
-                  <button mat-menu-item (click)="denyPromotion(promotion)">
+                  <button mat-menu-item (click)="denyProductLaunch(product)">
                     Deny
                   </button>
-                  <button mat-menu-item (click)="activePromotion(promotion)">
+                  <button mat-menu-item (click)="activeProductLaunch(product)">
                     Active
                   </button>
-                  <button mat-menu-item (click)="inactivePromotion(promotion)">
+                  <button
+                    mat-menu-item
+                    (click)="inactiveProductLaunch(product)"
+                  >
                     InActive
                   </button>
 
-                  <button mat-menu-item (click)="approvePromotion(promotion)">
+                  <button mat-menu-item (click)="approveProductLaunch(product)">
                     Approve
                   </button>
-                  <button mat-menu-item (click)="holdPromotion(promotion)">
+                  <button mat-menu-item (click)="holdProductLaunch(product)">
                     Hold
                   </button>
                 </mat-menu>
