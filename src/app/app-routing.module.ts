@@ -55,13 +55,17 @@ const routes: Routes = [
     loadChildren: () =>
       import("./marketing/marketing.module").then((m) => m.MarketingModule),
   },
+  {
+    path: "loyalty",
+    loadChildren: () =>
+      import("./loyailty/loyailty.module").then((m) => m.LoyailtyModule),
+  },
   { path: "dashboard", component: DashboardComponent },
   { path: "customers", component: CustomerComponent },
   { path: "add-successful", component: SuccessfulModelComponent },
   { path: "delete-successful", component: DeleteModelComponent },
   { path: "analytics", component: AnalyticsComponent },
   { path: "venderOrder", component: VenderOrderComponent },
-  { path: "loyalty", component: LoyailtyComponent },
   { path: "Payments", component: PaymentsComponent },
   { path: "offers", component: OffersComponent },
   { path: "purchasersOrder", component: PurchasersOrderComponent },
@@ -69,7 +73,6 @@ const routes: Routes = [
   { path: "freezed", component: FreezedModelComponent },
   { path: "ratingForCustomer", component: RatingForCustomerComponent },
   { path: "add-offers", component: AddOffersComponent },
-  { path: "add-loyalty", component: AddLoyaltyComponent },
   { path: "deny-product", component: DenyProductComponent },
   { path: "reward-categories", component: RewardCategoriesComponent },
   { path: "add-language", component: AddLanguageComponent },
