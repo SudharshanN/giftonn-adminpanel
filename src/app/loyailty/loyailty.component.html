@@ -1,0 +1,173 @@
+<div>
+    <div class="d-flex justify-content-between pb-4 mobile_admin_heading">
+        <div class="pl-5 page_title_info">
+            <p class="page--title">Loyality</p>
+        </div>
+        <div class="d-flex justify-content-end">
+            <div class="pr-4">
+                <button mat-stroked-button color="primary" class="outline--button filter-btn" (click)="openFilter()">
+          Filter
+          <svg xmlns="http://www.w3.org/2000/svg"
+               id="Layer_1"
+               enable-background="new 0 0 32 32"
+               height="22"
+               viewBox="0 0 32 32"
+               width="22">
+            <g fill="#988149">
+              <path
+                    d="m4 9h4c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2h14c.552 0 1-.447 1-1s-.448-1-1-1h-14c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2h-4c-.552 0-1 .447-1 1s.448 1 1 1z" />
+              <path
+                    d="m28 15h-6c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2h-12c-.552 0-1 .447-1 1s.448 1 1 1h12c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2h6c.552 0 1-.447 1-1s-.448-1-1-1z" />
+              <path
+                    d="m28 23h-14c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2h-4c-.552 0-1 .447-1 1s.448 1 1 1h4c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2h14c.552 0 1-.447 1-1s-.448-1-1-1z" />
+            </g>
+          </svg>
+        </button>
+            </div>
+            <div>
+                <button mat-stroked-button color="accent" class="primary--button add-user-btn" (click)="addLoyalty()">Add Loyality
+        </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ml-4 shadow-lg bg-white rounded h-100 mobile_userInfo">
+    <div class="search_mobile_inforamtive d-flex justify-content-between">
+        <div class="justify-content-center align-self-center export_informative">
+            <div class="d-flex justify-content-start">
+                <div class="text-muted pl-2 justify-content-center align-self-center">
+                    <span class="font-weight-bold align-middle pr-3">Export: </span>
+                </div>
+                <div class="pr-3">
+                    <button mat-stroked-button color="accent" class="outline--export--button btn-outline-35" (click)="download('csv')">
+            CSV
+          </button>
+                </div>
+                <div class="pr-3">
+                    <button mat-stroked-button color="accent" class="outline--export--button btn-outline-35" (click)="download('xls')">
+            XLS
+          </button>
+                </div>
+                <div class="pr-3">
+                    <button mat-stroked-button color="accent" class="outline--export--button btn-outline-35" (click)="download('pdf')">
+            PDF
+          </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-content-center search_mobile">
+            <mat-form-field appearance="outline" style="font-size: 20px" class="pr-3">
+                <!-- <mat-icon matSuffix>search</mat-icon> -->
+
+                <input matInput type="search" placeholder="search" class="search-input" />
+                <i class="fa fa-search"></i>
+
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover tab_admin">
+            <thead>
+                <tr>
+                    <th>Purchaser Name</th>
+                    <th>Product Id</th>
+                    <th>Reward Type</th>
+                    <th>Amount</th>
+                    <th>Points</th>
+                    <th>Currency Code</th>
+                    <th>Loyailty End Date</th>
+                    <th>Earn Points</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rajesh Varma</td>
+                    <td>JOY56897</td>
+                    <td> Purchasr Reward</td>
+                    <td>1500</td>
+                    <td>15</td>
+                    <td>INR</td>
+                    <td>05/12/2021</td>
+                    <td>65</td>
+                    <td class="activ_btn" (click)="action()"><a>Reward</a></td>
+                </tr>
+                <tr>
+                    <td>Rajesh Varma</td>
+                    <td>JOY56897</td>
+                    <td> Purchasr Reward</td>
+                    <td>1500</td>
+                    <td>15</td>
+                    <td>INR</td>
+                    <td>05/12/2021</td>
+                    <td>65</td>
+                    <td class="activ_btn" (click)="action()"><a>Reward</a></td>
+                </tr>
+                <tr>
+                    <td>Rajesh Varma</td>
+                    <td>JOY56897</td>
+                    <td> Purchasr Reward</td>
+                    <td>1500</td>
+                    <td>15</td>
+                    <td>INR</td>
+                    <td>05/12/2021</td>
+                    <td>65</td>
+                    <td class="activ_btn" (click)="action()"><a>Reward</a></td>
+                </tr>
+                <tr>
+                    <td>Rajesh Varma</td>
+                    <td>JOY56897</td>
+                    <td> Purchasr Reward</td>
+                    <td>1500</td>
+                    <td>15</td>
+                    <td>INR</td>
+                    <td>05/12/2021</td>
+                    <td>65</td>
+                    <td class="activ_btn" (click)="action()"><a>Reward</a></td>
+                </tr>
+                <tr>
+                    <td>Rajesh Varma</td>
+                    <td>JOY56897</td>
+                    <td> Purchasr Reward</td>
+                    <td>1500</td>
+                    <td>15</td>
+                    <td>INR</td>
+                    <td>05/12/2021</td>
+                    <td>65</td>
+                    <td class="activ_btn" (click)="action()"><a>Reward</a></td>
+                </tr>
+                <tr>
+                    <td>Rajesh Varma</td>
+                    <td>JOY56897</td>
+                    <td> Purchasr Reward</td>
+                    <td>1500</td>
+                    <td>15</td>
+                    <td>INR</td>
+                    <td>05/12/2021</td>
+                    <td>65</td>
+                    <td class="activ_btn" (click)="action()"><a>Reward</a></td>
+                </tr>
+                <tr>
+                    <td>Rajesh Varma</td>
+                    <td>JOY56897</td>
+                    <td> Purchasr Reward</td>
+                    <td>1500</td>
+                    <td>15</td>
+                    <td>INR</td>
+                    <td>05/12/2021</td>
+                    <td>65</td>
+                    <td class="activ_btn" (click)="action()"><a>Reward</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+    </mat-paginator> -->
+    <div class="pagonation">
+        <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Custom pagination">
+            <ng-template ngbPaginationNext>Next</ng-template>
+
+        </ngb-pagination>
+    </div>
+</div>

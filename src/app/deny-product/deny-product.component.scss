@@ -1,0 +1,67 @@
+.lable-font-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.full-width {
+    width: 70%;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    font-family: "Montserrat" !important;
+    margin-left: 70px;
+}
+
+.form-lable {
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    padding-left: 70px;
+    font-family: "Montserrat" !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: #9e8656 !important;
+}
+
+::ng-deep.mat-select-arrow {
+    color: #9e8656 !important;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: #9e8656;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #9e8656;
+}
+
+::ng-deep .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: #9e8656;
+}
+
+::ng-deep .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: #9e8656;
+}
+
+.submit-button {
+    min-width: 20%;
+    height: 50px;
+    font-size: 16px;
+    background: #988149;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+     ::ng-deep .cdk-overlay-pane {
+        width: 80% !important;
+    }
+    .dany_vendor_info {
+        padding: 0 !important;
+    }
+    .form-lable {
+        font-size: 12px !important;
+    }
+}
